@@ -1,6 +1,7 @@
+
 def create_header(num_recorder, buffer_list):
-    # Create first row (header) of annotation csv file
-    header = ['frame']
+    
+    header = ['frame', 'error']
 
     for i in buffer_list:
         for j in range(1, num_recorder+1):
@@ -9,9 +10,9 @@ def create_header(num_recorder, buffer_list):
 
     return(header)
 
-# HOW TO USE
-#num_recorder = 4
-#buffer_list = ['1m', '3m', '6m', '9m']
+#HOW TO USE
+# num_recorder = 4
+# buffer_list = ['1m', '3m', '6m', '9m']
 
-#header = create_header(num_recorder, buffer_list)
-#print(header)
+# header = create_header(num_recorder, buffer_list)
+# print(header)
